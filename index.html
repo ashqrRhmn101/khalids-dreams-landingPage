@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Khalid's Dreams — খাঁটি পণ্য, বিশ্বস্ত সেবা</title>
+    <meta
+      name="description"
+      content="সুন্দরবনের খাঁটি মধু, দেশি ঘি, তেল, চাউল, চিনি — সরাসরি আপনার দরজায়।"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <img
+            id="logoImg"
+            class="nvLogo-img"
+            src="https://i.ibb.co.com/wNWqGQpR/Logo.jpg"
+            alt="logo"
+          />
+          <!-- <span id="logoEmoji" class="logo-emoji">🍯</span> -->
+          <span id="siteLogo" class="logo-sub">Khalid's Dreams</span>
+        </a>
+        <div class="nav-search">
+          <span class="si">🔍</span>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="পণ্য খুঁজুন..."
+            autocomplete="off"
+          />
+          <div class="search-drop" id="searchDrop"></div>
+        </div>
+        <div class="nav-actions">
+          <button class="nav-btn" onclick="openWishlist()" title="Wishlist">
+            ❤️<span class="bdg" id="wishBdg" style="display: none">0</span>
+          </button>
+          <button class="nav-btn" onclick="openCartModal()" title="Cart">
+            🛒<span class="bdg" id="cartBdg" style="display: none">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-slides" id="heroSlides"></div>
+      <button class="hero-arr prev" onclick="heroMove(-1)">‹</button>
+      <button class="hero-arr next" onclick="heroMove(1)">›</button>
+      <div class="hero-dots" id="heroDots"></div>
+    </section>
+
+    <!-- ===== OFFER STRIP ===== -->
+    <div class="offer-strip" id="offerStrip"></div>
+
+    <!-- ===== CATEGORIES ===== -->
+    <div class="cat-bar">
+      <h2>ক্যাটাগরি বেছে নিন</h2>
+      <div class="cat-list" id="catList"></div>
+    </div>
+
+    <!-- ===== FEATURED PRODUCTS ===== -->
+    <section class="section" id="featured" style="background: var(--dark)">
+      <div class="container">
+        <div class="sec-header">
+          <h2 class="sec-title">ফিচার্ড পণ্য</h2>
+          <a href="#all-prods" class="see-all">সব দেখুন →</a>
+        </div>
+        <div class="prod-grid" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== MID CAROUSEL ===== -->
+    <div class="mid-wrap">
+      <div class="container">
+        <div class="mid-viewport">
+          <div class="mid-slides" id="midSlides"></div>
+        </div>
+        <div class="mid-dots" id="midDots"></div>
+      </div>
+    </div>
+
+    <!-- ===== ALL PRODUCTS ===== -->
+    <section class="section" id="all-prods" style="background: var(--dark2)">
+      <div class="container">
+        <div class="sec-header">
+          <h2 class="sec-title">সকল পণ্য</h2>
+        </div>
+        <div class="prod-grid" id="allProdGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST ===== -->
+    <section class="trust-sec">
+      <div class="container">
+        <div
+          class="sec-header"
+          style="justify-content: center; margin-bottom: 26px"
+        >
+          <h2 class="sec-title">কেন আমাদের বেছে নেবেন?</h2>
+        </div>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-icon">🌿</div>
+            <h3>১০০% অর্গানিক</h3>
+            <p>সব পণ্য প্রাকৃতিক ও রাসায়নিকমুক্ত</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon">🚚</div>
+            <h3>দ্রুত ডেলিভারি</h3>
+            <p>সারা বাংলাদেশে ২৪–৪৮ ঘণ্টায়</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon">💯</div>
+            <h3>গুণমান গ্যারান্টি</h3>
+            <p>সন্তুষ্ট না হলে সম্পূর্ণ রিফান্ড</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon">💬</div>
+            <h3>২৪/৭ সাপোর্ট</h3>
+            <p>WhatsApp-এ যেকোনো সময় সাহায্য</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🍯 <span>Khalid's Dreams</span></div>
+          <p>খাঁটি মধু, ঘি, তেল, চাউল ও চিনির জন্য বিশ্বস্ত অনলাইন স্টোর।</p>
+          <div class="social-row">
+            <a class="soc-btn wa-link" href="#" target="_blank">📱</a>
+            <a class="soc-btn" href="#" target="_blank">📘</a>
+            <a class="soc-btn" href="#" target="_blank">📸</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>দ্রুত লিংক</h4>
+          <ul>
+            <li><a href="#hero">🏠 হোম</a></li>
+            <li><a href="#featured">⭐ ফিচার্ড পণ্য</a></li>
+            <li><a href="#all-prods">🛒 সকল পণ্য</a></li>
+            <li>
+              <a href="javascript:void(0)" onclick="openWishlist()"
+                >❤️ উইশলিস্ট</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>ক্যাটাগরি</h4>
+          <ul>
+            <li>
+              <a href="javascript:void(0)" onclick="footerFilter('honey')"
+                >🍯 মধু</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="footerFilter('ghee')"
+                >🧈 ঘি</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="footerFilter('oil')"
+                >🫙 তেল</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="footerFilter('rice')"
+                >🌾 চাউল</a
+              >
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="footerFilter('sugar')"
+                >🍬 চিনি</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>যোগাযোগ</h4>
+          <div class="fc-info">
+            📱 <span id="footerPhone">01710-979757</span>
+          </div>
+          <div class="fc-info">
+            📍 <span id="footerAddr">ঢাকা, বাংলাদেশ</span>
+          </div>
+          <div class="fc-info">⏰ সকাল ৯টা — রাত ১০টা</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Khalid's Dreams. সব অধিকার সংরক্ষিত।</p>
+        <div class="dev-credit">
+          ⚡ Developed by
+          <a
+            href="https://www.linkedin.com/in/lavib-uddin-ashik"
+            target="_blank"
+            rel="noopener"
+            >Md. Lavib Uddin Ashik</a
+          >
+        </div>
+        <div class="pay-badges">
+          <span class="pay-b pb-bkash">bKash</span>
+          <span class="pay-b pb-nagad">Nagad</span>
+          <span class="pay-b pb-cod">COD</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== FABs ===== -->
+    <a class="wa-fab wa-link" href="#" target="_blank" title="WhatsApp">📱</a>
+    <!-- <a class="call-fab call-link" href="tel:01710979757" title="কল করুন">📞</a> -->
+
+    <!-- ===== MOBILE BOTTOM NAV ===== -->
+    <nav class="mob-nav" id="mobNav">
+      <div class="mob-nav-inner">
+        <button class="mob-btn active" onclick="mobHome(this)">
+          <span class="mi">🏠</span>হোম
+        </button>
+        <button class="mob-btn" onclick="mobProds(this)">
+          <span class="mi">🛍️</span>পণ্য
+        </button>
+        <button
+          class="mob-btn"
+          onclick="
+            openWishlist();
+            setMobActive(this);
+          "
+        >
+          <span class="mi">❤️</span>উইশলিস্ট
+          <span class="mob-bdg" id="mobWishBdg" style="display: none">0</span>
+        </button>
+        <button class="mob-btn mob-order-btn" onclick="openQuickOrder()">
+          <span class="mi">📦</span>অর্ডার
+        </button>
+        <button
+          class="mob-btn"
+          onclick="
+            openCartModal();
+            setMobActive(this);
+          "
+        >
+          <span class="mi">🛒</span>কার্ট
+          <span class="mob-bdg" id="mobCartBdg" style="display: none">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast-wrap" id="toastWrap"></div>
+
+    <!-- ===== ORDER MODAL ===== -->
+    <div class="m-overlay" id="orderModal">
+      <div class="modal">
+        <div class="m-head">
+          <span class="m-title">📦 অর্ডার করুন</span>
+          <button class="m-close" onclick="closeModal('orderModal')">✕</button>
+        </div>
+        <div class="m-body">
+          <div class="m-prod-bar" id="orderProdBar"></div>
+          <div class="fg" id="qtyRow">
+            <label class="fl">পরিমাণ</label>
+            <div class="qty-ctrl">
+              <button class="qty-b" onclick="changeQty(-1)">−</button>
+              <input
+                type="number"
+                class="qty-n"
+                id="orderQty"
+                value="1"
+                min="1"
+                max="99"
+                placeholder="1"
+              />
+              <button class="qty-b" onclick="changeQty(1)">+</button>
+            </div>
+          </div>
+          <div class="fg">
+            <label class="fl">আপনার নাম *</label
+            ><input
+              type="text"
+              class="fi"
+              id="oName"
+              placeholder="পূর্ণ নাম লিখুন"
+            />
+          </div>
+          <div class="fg">
+            <label class="fl">মোবাইল নম্বর *</label
+            ><input
+              type="tel"
+              class="fi"
+              id="oPhone"
+              placeholder="01XXXXXXXXX"
+            />
+          </div>
+          <div class="fg">
+            <label class="fl">ডেলিভারি ঠিকানা *</label
+            ><textarea
+              class="fta"
+              id="oAddr"
+              placeholder="বাড়ি নম্বর, রাস্তা, এলাকা, জেলা..."
+            ></textarea>
+          </div>
+          <div class="fg">
+            <label class="fl">পেমেন্ট পদ্ধতি</label>
+            <div class="pay-tabs">
+              <button class="ptab active" onclick="selectPay('cod', this)">
+                <span class="ti">💵</span>Cash on Delivery
+              </button>
+              <button class="ptab" onclick="selectPay('bkash', this)">
+                <span class="ti">💳</span>bKash
+              </button>
+              <button class="ptab" onclick="selectPay('nagad', this)">
+                <span class="ti">📱</span>Nagad
+              </button>
+            </div>
+            <div class="pay-info show" id="payInfoBox">
+              💵 পণ্য পেলে নগদ পেমেন্ট করুন।
+            </div>
+          </div>
+          <div class="fg">
+            <label class="fl">বিশেষ নির্দেশনা (ঐচ্ছিক)</label
+            ><textarea
+              class="fta"
+              id="oNote"
+              placeholder="যেকোনো অনুরোধ লিখুন..."
+            ></textarea>
+          </div>
+          <div class="total-row">
+            <span>মোট পরিমাণ</span><span id="orderTotal">৳ ০</span>
+          </div>
+          <button class="btn-submit" onclick="submitOrder()">
+            ✅ অর্ডার নিশ্চিত করুন
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== DETAIL MODAL ===== -->
+    <div class="m-overlay detail-modal" id="detailModal">
+      <div class="modal">
+        <div class="m-head">
+          <span class="m-title">পণ্যের বিবরণ</span>
+          <button class="m-close" onclick="closeModal('detailModal')">✕</button>
+        </div>
+        <div class="m-body" id="detailBody"></div>
+      </div>
+    </div>
+
+    <!-- ===== WISHLIST MODAL ===== -->
+    <div class="m-overlay" id="wishModal">
+      <div class="modal">
+        <div class="m-head">
+          <span class="m-title">❤️ আমার উইশলিস্ট</span>
+          <button class="m-close" onclick="closeModal('wishModal')">✕</button>
+        </div>
+        <div class="m-body" id="wishBody"></div>
+      </div>
+    </div>
+
+    <!-- ===== CART MODAL ===== -->
+    <div class="m-overlay" id="cartModal">
+      <div class="modal">
+        <div class="m-head">
+          <span class="m-title">🛒 আমার কার্ট</span>
+          <button class="m-close" onclick="closeModal('cartModal')">✕</button>
+        </div>
+        <div class="m-body" id="cartBody"></div>
+      </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
