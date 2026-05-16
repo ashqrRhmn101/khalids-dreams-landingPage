@@ -438,31 +438,34 @@
             <div class="set-card">
               <h3>🏪 ব্যবসার তথ্য</h3>
               <div class="fg">
-                <label class="fl">সাইটের নাম</label
+                <label class="fl" for="cfg_siteName">সাইটের নাম</label
                 ><input
                   class="fi"
                   id="cfg_siteName"
+                  title="সাইটের নাম"
                   placeholder="Khalid's Dreams"
                 />
               </div>
               <div class="fg">
-                <label class="fl">ট্যাগলাইন</label
+                <label class="fl" for="cfg_tagline">ট্যাগলাইন</label
                 ><input
                   class="fi"
                   id="cfg_tagline"
+                  title="ট্যাগলাইন"
                   placeholder="খাঁটি পণ্য, বিশ্বস্ত সেবা"
                 />
               </div>
               <div class="fg">
-                <label class="fl">ঠিকানা</label
+                <label class="fl" for="cfg_address">ঠিকানা</label
                 ><input
                   class="fi"
                   id="cfg_address"
+                  title="ঠিকানা"
                   placeholder="ঢাকা, বাংলাদেশ"
                 />
               </div>
               <div class="fg">
-                <label class="fl">লোগো ছবি</label>
+                <label class="fl" for="logoFile">লোগো ছবি</label>
                 <div class="img-upload-wrap">
                   <div
                     class="img-preview"
@@ -478,6 +481,7 @@
                     type="file"
                     id="logoFile"
                     class="img-file-input"
+                    title="লোগো ছবি"
                     accept="image/*"
                     onchange="handleLogoImgCompressed(this)"
                   />
@@ -495,22 +499,30 @@
             <div class="set-card">
               <h3>📱 যোগাযোগ</h3>
               <div class="fg">
-                <label class="fl">WhatsApp নম্বর (88 দিয়ে শুরু)</label
+                <label class="fl" for="cfg_whatsapp"
+                  >WhatsApp নম্বর (88 দিয়ে শুরু)</label
                 ><input
                   class="fi"
                   id="cfg_whatsapp"
+                  title="WhatsApp নম্বর"
                   placeholder="8801710979757"
                 />
               </div>
               <div class="fg">
-                <label class="fl">ফোন নম্বর</label
-                ><input class="fi" id="cfg_phone" placeholder="01710-979757" />
+                <label class="fl" for="cfg_phone">ফোন নম্বর</label
+                ><input
+                  class="fi"
+                  id="cfg_phone"
+                  title="ফোন নম্বর"
+                  placeholder="01710-979757"
+                />
               </div>
               <div class="fg">
-                <label class="fl">ইমেইল</label
+                <label class="fl" for="cfg_email">ইমেইল</label
                 ><input
                   class="fi"
                   id="cfg_email"
+                  title="ইমেইল"
                   placeholder="khalidsdreams@gmail.com"
                 />
               </div>
@@ -549,16 +561,22 @@
             <div class="set-card">
               <h3>📊 Analytics</h3>
               <div class="fg">
-                <label class="fl">Facebook Pixel ID</label
+                <label class="fl" for="cfg_fbPixelId">Facebook Pixel ID</label
                 ><input
                   class="fi"
                   id="cfg_fbPixelId"
                   placeholder="123456789012345"
+                  title="Facebook Pixel ID"
                 />
               </div>
               <div class="fg">
-                <label class="fl">Google Analytics ID</label
-                ><input class="fi" id="cfg_gaId" placeholder="G-XXXXXXXXXX" />
+                <label class="fl" for="cfg_gaId">Google Analytics ID</label
+                ><input
+                  class="fi"
+                  id="cfg_gaId"
+                  placeholder="G-XXXXXXXXXX"
+                  title="Google Analytics ID"
+                />
               </div>
               <p
                 style="
@@ -575,16 +593,34 @@
             <div class="set-card">
               <h3>🔐 পাসওয়ার্ড পরিবর্তন</h3>
               <div class="fg">
-                <label class="fl">বর্তমান পাসওয়ার্ড</label
-                ><input type="password" class="fi" id="oldPass" />
+                <label class="fl" for="oldPass">বর্তমান পাসওয়ার্ড</label
+                ><input
+                  type="password"
+                  class="fi"
+                  id="oldPass"
+                  placeholder="বর্তমান পাসওয়ার্ড"
+                  title="বর্তমান পাসওয়ার্ড"
+                />
               </div>
               <div class="fg">
-                <label class="fl">নতুন পাসওয়ার্ড</label
-                ><input type="password" class="fi" id="newPass" />
+                <label class="fl" for="newPass">নতুন পাসওয়ার্ড</label
+                ><input
+                  type="password"
+                  class="fi"
+                  id="newPass"
+                  placeholder="নতুন পাসওয়ার্ড"
+                  title="নতুন পাসওয়ার্ড"
+                />
               </div>
               <div class="fg">
-                <label class="fl">নিশ্চিত করুন</label
-                ><input type="password" class="fi" id="confPass" />
+                <label class="fl" for="confPass">নিশ্চিত করুন</label
+                ><input
+                  type="password"
+                  class="fi"
+                  id="confPass"
+                  placeholder="নিশ্চিত করুন"
+                  title="নিশ্চিত করুন"
+                />
               </div>
               <button class="btn-primary" onclick="changePassword()">
                 🔐 পাসওয়ার্ড পরিবর্তন করুন
@@ -638,7 +674,7 @@
         </div>
         <div class="m-body">
           <div class="fg">
-            <label class="fl">পণ্যের ছবি</label>
+            <label class="fl" for="prodImgFile">পণ্যের ছবি</label>
             <div class="img-upload-wrap">
               <div
                 class="img-preview"
@@ -668,17 +704,17 @@
           </div>
           <div class="fg-row">
             <div class="fg">
-              <label class="fl">পণ্যের নাম (বাংলা) *</label
+              <label class="fl" for="pName">পণ্যের নাম (বাংলা) *</label
               ><input class="fi" id="pName" placeholder="সুন্দরবনের মধু" />
             </div>
             <div class="fg">
-              <label class="fl">পণ্যের নাম (ইংরেজি)</label
+              <label class="fl" for="pNameEn">পণ্যের নাম (ইংরেজি)</label
               ><input class="fi" id="pNameEn" placeholder="Sundarban Honey" />
             </div>
           </div>
           <div class="fg-row">
             <div class="fg">
-              <label class="fl">ক্যাটাগরি *</label>
+              <label class="fl" for="pCategory">ক্যাটাগরি *</label>
               <select class="fs" id="pCategory">
                 <option value="honey">🍯 মধু</option>
                 <option value="ghee">🧈 ঘি</option>
@@ -688,17 +724,18 @@
               </select>
             </div>
             <div class="fg">
-              <label class="fl">ইমোজি (ছবি না থাকলে)</label
+              <label class="fl" for="pEmoji">ইমোজি (ছবি না থাকলে)</label
               ><input class="fi" id="pEmoji" placeholder="🍯" maxlength="4" />
             </div>
           </div>
           <div class="fg-row">
             <div class="fg">
-              <label class="fl">মূল্য (৳) *</label
+              <label class="fl" for="pPrice">মূল্য (৳) *</label
               ><input type="number" class="fi" id="pPrice" placeholder="850" />
             </div>
             <div class="fg">
-              <label class="fl">আগের মূল্য (৳) — ছাড় দেখাতে</label
+              <label class="fl" for="pOldPrice"
+                >আগের মূল্য (৳) — ছাড় দেখাতে</label
               ><input
                 type="number"
                 class="fi"
@@ -709,11 +746,11 @@
           </div>
           <div class="fg-row">
             <div class="fg">
-              <label class="fl">পরিমাণ/ইউনিট</label
+              <label class="fl" for="pUnit">পরিমাণ/ইউনিট</label
               ><input class="fi" id="pUnit" placeholder="৫০০ গ্রাম" />
             </div>
             <div class="fg">
-              <label class="fl">ব্যাজ</label>
+              <label class="fl" for="pBadge">ব্যাজ</label>
               <select class="fs" id="pBadge">
                 <option value="">কোনো ব্যাজ নেই</option>
                 <option value="bestseller">বেস্টসেলার</option>
@@ -726,7 +763,7 @@
             </div>
           </div>
           <div class="fg">
-            <label class="fl">বিবরণ</label
+            <label class="fl" for="pDesc">বিবরণ</label
             ><textarea
               class="fta"
               id="pDesc"
@@ -734,7 +771,8 @@
             ></textarea>
           </div>
           <div class="fg">
-            <label class="fl">বৈশিষ্ট্যসমূহ (প্রতিটি লাইনে একটি)</label
+            <label class="fl" for="pFeats"
+              >বৈশিষ্ট্যসমূহ (প্রতিটি লাইনে একটি)</label
             ><textarea
               class="fta"
               id="pFeats"
@@ -743,7 +781,7 @@
           </div>
           <div class="fg-row">
             <div class="fg">
-              <label class="fl">রেটিং (১-৫)</label
+              <label class="fl" for="pRating">রেটিং (১-৫)</label
               ><input
                 type="number"
                 class="fi"
@@ -755,7 +793,7 @@
               />
             </div>
             <div class="fg">
-              <label class="fl">রিভিউ সংখ্যা</label
+              <label class="fl" for="pReviews">রিভিউ সংখ্যা</label
               ><input type="number" class="fi" id="pReviews" value="0" />
             </div>
           </div>
@@ -783,7 +821,7 @@
         </div>
         <div class="m-body">
           <div class="fg">
-            <label class="fl">ক্যাটাগরি ছবি (ঐচ্ছিক)</label>
+            <label class="fl" for="catImgFile">ক্যাটাগরি ছবি (ঐচ্ছিক)</label>
             <div class="img-upload-wrap">
               <div
                 class="img-preview"
@@ -800,6 +838,8 @@
                 id="catImgFile"
                 class="img-file-input"
                 accept="image/*"
+                title="ক্যাটাগরি ছবি আপলোড করুন"
+                aria-label="ক্যাটাগরি ছবি আপলোড করুন"
                 onchange="handleCatImgCompressed(this)"
               />
               <button
@@ -812,15 +852,15 @@
             </div>
           </div>
           <div class="fg">
-            <label class="fl">ক্যাটাগরি ID (ইংরেজি, ছোট হাতে) *</label
+            <label class="fl" for="cId">ক্যাটাগরি ID (ইংরেজি, ছোট হাতে) *</label
             ><input class="fi" id="cId" placeholder="spice" />
           </div>
           <div class="fg">
-            <label class="fl">ক্যাটাগরি নাম (বাংলা) *</label
+            <label class="fl" for="cName">ক্যাটাগরি নাম (বাংলা) *</label
             ><input class="fi" id="cName" placeholder="মশলা" />
           </div>
           <div class="fg">
-            <label class="fl">আইকন ইমোজি (ছবি না থাকলে)</label
+            <label class="fl" for="cIcon">আইকন ইমোজি (ছবি না থাকলে)</label
             ><input class="fi" id="cIcon" placeholder="🌶️" maxlength="4" />
           </div>
         </div>
@@ -844,7 +884,7 @@
         </div>
         <div class="m-body">
           <div class="fg">
-            <label class="fl"
+            <label class="fl" for="bannerImgFile"
               >ব্যানার ছবি (থাকলে background হিসেবে দেখাবে)</label
             >
             <div class="img-upload-wrap">
@@ -862,6 +902,7 @@
                 type="file"
                 id="bannerImgFile"
                 class="img-file-input"
+                title="ব্যানার ছবি আপলোড"
                 accept="image/*"
                 onchange="handleBannerImgCompressed(this)"
               />
@@ -871,27 +912,32 @@
               >
                 📷 ছবি আপলোড করুন
               </button>
-              <input type="hidden" id="bannerImgData" />
+              <input
+                type="hidden"
+                id="bannerImgData"
+                title="banner image data"
+              />
             </div>
           </div>
           <div class="fg">
-            <label class="fl">শিরোনাম *</label
+            <label class="fl" for="bTitle">শিরোনাম *</label
             ><input class="fi" id="bTitle" placeholder="ঈদ স্পেশাল অফার!" />
           </div>
           <div class="fg">
-            <label class="fl">সাবটাইটেল</label
+            <label class="fl" for="bSubtitle">সাবটাইটেল</label
             ><input class="fi" id="bSubtitle" placeholder="সব পণ্যে ১৫% ছাড়" />
           </div>
           <div class="fg">
-            <label class="fl">বিবরণ / কোড</label
+            <label class="fl" for="bDetail">বিবরণ / কোড</label
             ><input class="fi" id="bDetail" placeholder="কোড: KHALID26" />
           </div>
           <div class="fg">
-            <label class="fl">ইমোজি (ছবি না থাকলে)</label
+            <label class="fl" for="bEmoji">ইমোজি (ছবি না থাকলে)</label
             ><input class="fi" id="bEmoji" placeholder="🎉" maxlength="4" />
           </div>
           <div class="fg">
-            <label class="fl">ব্যাকগ্রাউন্ড গ্রেডিয়েন্ট (ছবি না থাকলে)</label
+            <label class="fl" for="bBg"
+              >ব্যাকগ্রাউন্ড গ্রেডিয়েন্ট (ছবি না থাকলে)</label
             ><input
               class="fi"
               id="bBg"
@@ -938,6 +984,7 @@
                 id="heroImgFile"
                 class="img-file-input"
                 accept="image/*"
+                title="হিরো ব্যাকগ্রাউন্ড ছবি"
                 onchange="handleHeroImgCompressed(this)"
               />
               <button
