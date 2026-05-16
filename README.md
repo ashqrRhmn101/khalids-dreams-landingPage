@@ -23,26 +23,21 @@ khalids-dreams/
 
 ## 🚀 কিভাবে চালাবেন
 
-সব ফাইল একই ফোল্ডারে রাখুন এবং `index.html` ব্রাউজারে খুলুন।
+সব ফাইল একই ফোল্ডারে রাখুন এবং `https://ashqrrhmn101.github.io/khalids-dreams-landingPage/` ব্রাউজারে খুলুন।
 
 ---
 
-## 🔐 অ্যাডমিন প্যানেল
-
-`admin.html` খুলুন — লগইন করুন:
-- **ইউজারনেম:**
-- **পাসওয়ার্ড:** 
-
 ### অ্যাডমিন থেকে যা করতে পারবেন:
-| ফিচার | বিবরণ |
-|---|---|
-| 📦 পণ্য যোগ/এডিট | ছবি, দাম, বিবরণ, ব্যাজ সহ |
-| 🛒 অর্ডার ম্যানেজ | পেন্ডিং → সম্পন্ন/বাতিল |
-| 🏷️ ক্যাটাগরি | নতুন ক্যাটাগরি ছবি সহ |
-| 🎠 অফার ব্যানার | ছবি/ইমোজি সহ ব্যানার |
-| 🖼️ হিরো স্লাইড | মেইন ব্যানার ম্যানেজ |
-| 📈 Analytics | ভিজিট, অর্ডার, কার্ড ট্র্যাকিং |
-| ⚙️ সেটিংস | WhatsApp, ডেলিভারি চার্জ, Pixel ID |
+
+| ফিচার             | বিবরণ                              |
+| ----------------- | ---------------------------------- |
+| 📦 পণ্য যোগ/এডিট  | ছবি, দাম, বিবরণ, ব্যাজ সহ          |
+| 🛒 অর্ডার ম্যানেজ | পেন্ডিং → সম্পন্ন/বাতিল            |
+| 🏷️ ক্যাটাগরি      | নতুন ক্যাটাগরি ছবি সহ              |
+| 🎠 অফার ব্যানার   | ছবি/ইমোজি সহ ব্যানার               |
+| 🖼️ হিরো স্লাইড    | মেইন ব্যানার ম্যানেজ               |
+| 📈 Analytics      | ভিজিট, অর্ডার, কার্ড ট্র্যাকিং     |
+| ⚙️ সেটিংস         | WhatsApp, ডেলিভারি চার্জ, Pixel ID |
 
 ---
 
@@ -65,16 +60,18 @@ Admin-এ কিছু পরিবর্তন করুন
 ## 📷 ছবি যোগ করার নিয়ম
 
 ### Admin থেকে (সহজতম):
+
 1. Admin → পণ্য ম্যানেজ → ✏️ এডিট
 2. "ছবি আপলোড করুন" বাটনে ক্লিক
 3. ফোন/কম্পিউটার থেকে ছবি বেছে নিন
 4. সেভ করুন — সাইটে দেখাবে ✅
 
 ### ম্যানুয়াল (products.js):
+
 ```javascript
-image: "images/আপনার-ছবি.jpg"
+image: "images/আপনার-ছবি.jpg";
 // অথবা URL:
-image: "https://example.com/image.jpg"
+image: "https://example.com/image.jpg";
 ```
 
 ---
@@ -82,6 +79,7 @@ image: "https://example.com/image.jpg"
 ## 📦 অর্ডার সিস্টেম
 
 কাস্টমার অর্ডার দিলে:
+
 1. ✅ **Admin Panel** → অর্ডার সমূহ-তে দেখা যাবে
 2. ✅ **WhatsApp-এ** পণ্যের নাম+পরিমাণ+মূল্য সহ মেসেজ আসবে
 3. ✅ **Cart checkout** করলে সব পণ্যের লিস্ট আসবে
@@ -91,12 +89,14 @@ image: "https://example.com/image.jpg"
 ## 📊 Analytics সেটআপ
 
 ### Facebook Pixel (সব ডিভাইস ট্র্যাক করতে):
+
 1. business.facebook.com → Events Manager
 2. Create Pixel → Pixel ID কপি করুন
 3. Admin → Settings → Facebook Pixel ID বসান
 4. সেভ করুন
 
 ### Google Analytics:
+
 1. analytics.google.com → New Property
 2. Measurement ID (G-XXXXXXXX) কপি করুন
 3. Admin → Settings → Google Analytics ID বসান
@@ -106,11 +106,11 @@ image: "https://example.com/image.jpg"
 
 ## 🌐 সাইট হোস্টিং (ফ্রি)
 
-| সার্ভিস | লিংক | বিবরণ |
-|---|---|---|
-| **Netlify** | netlify.com/drop | ফোল্ডার drag & drop করুন |
-| **GitHub Pages** | pages.github.com | GitHub-এ আপলোড করুন |
-| **Firebase** | firebase.google.com | Google-এর ফ্রি হোস্টিং |
+| সার্ভিস          | লিংক                | বিবরণ                    |
+| ---------------- | ------------------- | ------------------------ |
+| **Netlify**      | netlify.com/drop    | ফোল্ডার drag & drop করুন |
+| **GitHub Pages** | pages.github.com    | GitHub-এ আপলোড করুন      |
+| **Firebase**     | firebase.google.com | Google-এর ফ্রি হোস্টিং   |
 
 ---
 
