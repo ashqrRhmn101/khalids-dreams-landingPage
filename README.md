@@ -27,12 +27,6 @@ khalids-dreams/
 
 ---
 
-## 🔐 অ্যাডমিন প্যানেল
-
-`admin.html` খুলুন — লগইন করুন:
-- **ইউজারনেম:**
-- **পাসওয়ার্ড:** 
-
 ### অ্যাডমিন থেকে যা করতে পারবেন:
 | ফিচার | বিবরণ |
 |---|---|
@@ -46,36 +40,7 @@ khalids-dreams/
 
 ---
 
-## 🔄 Admin ↔ Site সংযোগ কিভাবে কাজ করে
-
-```
-Admin-এ কিছু পরিবর্তন করুন
-        ↓
-   localStorage-এ সেভ হয়
-        ↓
-   সাইট রিফ্রেশ করুন
-        ↓
-   সাথে সাথে দেখা যাবে ✅
-```
-
 > **Note:** একই ব্রাউজারে খুললে সাইট লাইভ আপডেট হবে।
-
----
-
-## 📷 ছবি যোগ করার নিয়ম
-
-### Admin থেকে (সহজতম):
-1. Admin → পণ্য ম্যানেজ → ✏️ এডিট
-2. "ছবি আপলোড করুন" বাটনে ক্লিক
-3. ফোন/কম্পিউটার থেকে ছবি বেছে নিন
-4. সেভ করুন — সাইটে দেখাবে ✅
-
-### ম্যানুয়াল (products.js):
-```javascript
-image: "images/আপনার-ছবি.jpg"
-// অথবা URL:
-image: "https://example.com/image.jpg"
-```
 
 ---
 
@@ -88,42 +53,3 @@ image: "https://example.com/image.jpg"
 
 ---
 
-## 📊 Analytics সেটআপ
-
-### Facebook Pixel (সব ডিভাইস ট্র্যাক করতে):
-1. business.facebook.com → Events Manager
-2. Create Pixel → Pixel ID কপি করুন
-3. Admin → Settings → Facebook Pixel ID বসান
-4. সেভ করুন
-
-### Google Analytics:
-1. analytics.google.com → New Property
-2. Measurement ID (G-XXXXXXXX) কপি করুন
-3. Admin → Settings → Google Analytics ID বসান
-4. সেভ করুন
-
----
-
-## 🌐 সাইট হোস্টিং (ফ্রি)
-
-| সার্ভিস | লিংক | বিবরণ |
-|---|---|---|
-| **Netlify** | netlify.com/drop | ফোল্ডার drag & drop করুন |
-| **GitHub Pages** | pages.github.com | GitHub-এ আপলোড করুন |
-| **Firebase** | firebase.google.com | Google-এর ফ্রি হোস্টিং |
-
----
-
-## ❓ সাধারণ প্রশ্ন
-
-**Q: Admin-এ পরিবর্তন করলে সাইটে দেখছি না?**
-A: সাইটের ট্যাব রিফ্রেশ করুন (F5 বা Ctrl+R)।
-
-**Q: অর্ডারের ডেটা কি হারিয়ে যাবে?**
-A: ব্রাউজার cache clear করলে localStorage মুছে যেতে পারে। Admin → Settings থেকে নিয়মিত `products.js` ডাউনলোড করে রাখুন।
-
-**Q: অন্য ডিভাইসে কাজ করে না?**
-A: localStorage শুধু একই ডিভাইসে কাজ করে। products.js ডাউনলোড করে হোস্টিং-এ আপলোড করলে সব ডিভাইসে কাজ করবে।
-
-**Q: ছবি size বড় হলে?**
-A: TinyPNG.com বা Squoosh.app দিয়ে ছবি compress করুন।
